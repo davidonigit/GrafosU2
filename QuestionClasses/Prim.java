@@ -96,29 +96,6 @@ public class Prim {
 
     public static void main(String[] args) {
 
-        int[][] matrizProjeto = {
-        //Vértices: 1   2    3    4    5    6    7    8    9    10   11   12   13   14   15   16   17   18   19
-        /* ( 1)*/{INF,   2, INF, INF, INF,   3, INF, INF, INF, INF,   1, INF, INF, INF, INF, INF, INF, INF, INF },
-        /* ( 2)*/{  2, INF,   1, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF },
-        /* ( 3)*/{INF,   1, INF,   2, INF, INF, INF,  10,   2, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF },
-        /* ( 4)*/{INF, INF,   2, INF,   4, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF },
-        /* ( 5)*/{INF, INF, INF,   4, INF, INF, INF, INF, INF,   5, INF, INF, INF, INF, INF, INF, INF, INF, INF },
-        /* ( 6)*/{  3, INF, INF, INF, INF, INF,   2, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF },
-        /* ( 7)*/{INF, INF, INF, INF, INF,   2, INF,   8, INF, INF, INF,   1,   5, INF, INF, INF, INF, INF, INF },
-        /* ( 8)*/{INF, INF,  10, INF, INF, INF,   8, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF },
-        /* ( 9)*/{INF, INF,   2, INF, INF, INF, INF, INF, INF,   6, INF, INF,  15,   1, INF, INF, INF, INF, INF },
-        /* (10)*/{INF, INF, INF, INF,   5, INF, INF, INF,   6, INF, INF, INF, INF, INF,   9, INF, INF, INF, INF },
-        /* (11)*/{  0, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF,   4, INF, INF, INF,   2, INF, INF, INF },
-        /* (12)*/{INF, INF, INF, INF, INF, INF,   1, INF, INF, INF,   4, INF, INF, INF, INF,   3,   1, INF, INF },
-        /* (13)*/{INF, INF, INF, INF, INF, INF,   5, INF,  15, INF, INF, INF, INF, INF, INF, INF, INF,   4, INF },
-        /* (14)*/{INF, INF, INF, INF, INF, INF, INF, INF,   1, INF, INF, INF, INF, INF,   1, INF, INF,  18, INF },
-        /* (15)*/{INF, INF, INF, INF, INF, INF, INF, INF, INF,   9, INF, INF, INF,   1, INF, INF, INF, INF,   5 },
-        /* (16)*/{INF, INF, INF, INF, INF, INF, INF, INF, INF, INF,   2,   3, INF, INF, INF, INF,   1, INF, INF },
-        /* (17)*/{INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF,   1, INF, INF, INF,   1, INF,  20, INF },
-        /* (18)*/{INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF,   4,  18, INF, INF,  20, INF,   5 },
-        /* (19)*/{INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF,   5, INF, INF,   5, INF }
-        };
-
         int[][] matrizSlide = {
         { INF, INF,   7, INF, INF, INF, INF, INF, INF, INF }, // a (0)
         { INF, INF,   2, INF,   8,   7, INF, INF, INF, INF }, // b (1)
